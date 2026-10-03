@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blast Four</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="set">
+  <header>
+    <div class="logo">Blast Four</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html">Play</a>
+      <a href="compare.html">Scores</a>
+      <a href="settings.html">Settings</a>
+      <button class="btn" id="musicBtn"></button>
+      <button class="btn" id="soundBtn"></button>
+    </nav>
+  </header>
+  <main>
+    <h2>⚙️ Sound &amp; Settings</h2>
+    <div class="card">
+      <div class="row"><span><b>🎵 Music</b><br>A calm tune that plays in the background.</span><button class="btn" id="musicToggle"></button></div>
+      <div class="row"><span><b>🔊 Sound effects</b><br>Short sounds for drops, wins, losses and draws.</span><button class="btn" id="sfxToggle"></button></div>
+      <div class="row"><span><b>Music volume</b></span><input type="range" id="volume" min="0" max="1" step="0.05"></div>
+      <div class="row">
+        <span><b>Try a sound</b></span>
+        <span>
+          <button class="btn" data-sound="drop">Drop</button>
+          <button class="btn" data-sound="win">Win</button>
+          <button class="btn" data-sound="lose">Lose</button>
+        </span>
+      </div>
+    </div>
+    <p class="sub">Music is the tune that keeps playing. Sound effects are the short sounds when something happens. Each one has its own ON/OFF.</p>
+  </main>
+  <script src="storage.js"></script>
+  <script src="background.js"></script>
+  <script src="sound.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blast Four</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cmp">
+  <header>
+    <div class="logo">Blast Four</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html">Play</a>
+      <a href="compare.html">Scores</a>
+      <a href="settings.html">Settings</a>
+      <button class="btn" id="musicBtn"></button>
+      <button class="btn" id="soundBtn"></button>
+    </nav>
+  </header>
+  <main>
+    <h2>🏆 Your scores</h2>
+    <div class="grid" id="scores"></div>
+    <h2 style="margin-top:36px">Recent games</h2>
+    <div class="card"><ul id="recent"></ul></div>
+    <p><button class="btn" id="reset" style="margin-top:14px">🗑 Reset scores</button></p>
+    <h2 style="margin-top:36px">🧠 Alpha-Beta ON vs OFF</h2>
+    <p class="sub">Alpha-Beta pruning lets the AI skip useless moves. Run the test to see how many positions it checks with and without it.</p>
+    <button class="btn big" id="run">▶ Run test</button>
+    <table id="speed" hidden></table>
+  </main>
+  <script src="engine.js"></script>
+  <script src="storage.js"></script>
+  <script src="background.js"></script>
+  <script src="sound.js"></script>
+  <script src="compare.js"></script>
+</body>
+</html>
